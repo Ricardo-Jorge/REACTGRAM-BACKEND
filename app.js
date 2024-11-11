@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     credentials: true,
-    origin: `http://localhost:${frontPort}`,
+    origin: `${frontPort}`,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
